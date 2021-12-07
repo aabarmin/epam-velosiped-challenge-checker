@@ -1,4 +1,4 @@
-package dev.abarmin.velosiped.checker.service;
+package dev.abarmin.velosiped.checker.config;
 
 import org.apache.commons.lang3.StringUtils;
 import org.kohsuke.github.GitHub;

@@ -28,8 +28,8 @@ public class RepositoryForkTest {
   private String className;
 
   @Column("REPOSITORY_FORK_TEST_CASES_TOTAL")
-  private long testCasesTotal;
+  private int testCasesTotal;
 
   @Column("REPOSITORY_FORK_TEST_CASES_SUCCESS")
-  private long testCasesSuccess;
+  private int testCasesSuccess;
 }

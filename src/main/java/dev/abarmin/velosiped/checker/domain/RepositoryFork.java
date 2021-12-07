@@ -30,6 +30,6 @@ public class RepositoryFork {
   @Column("REPOSITORY_FORK_LAST_UPDATED")
   private LocalDateTime lastUpdated;
 
-  @MappedCollection(idColumn = "REPOSITORY_FORK_TEST_ID", keyColumn = "REPOSITORY_FORK_ID")
+  @MappedCollection(idColumn = "REPOSITORY_FORK_ID", keyColumn = "REPOSITORY_FORK_TEST_ID")
   private Set<RepositoryForkTest> tests;
 }

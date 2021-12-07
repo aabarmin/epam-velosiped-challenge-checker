@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Statistics</title>
+</head>
+<body>
+
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th># no of tests</th>
+            <th># no of success</th>
+            <th>Last updated</th>
+        </tr>
+
+        <th:block th:each="item : ${items}">
+            <tr>
+                <td th:text="${item.repository}" />
+                <td th:text="${item.totalTests}" />
+                <td th:text="${item.totalTestsSuccess}" />
+                <td th:text="${item.updated}" />
+            </tr>
+
+            <tr th:each="test : ${item.tests}">
+                <td th:text="${test.className}" />
+                <td th:text="${test.testCases}" />
+                <td th:text="${test.testCasesSuccess}" />
+                <td>&nbsp;</td>
+            </tr>
+        </th:block>
+    </table>
+
+</body>
+</html>

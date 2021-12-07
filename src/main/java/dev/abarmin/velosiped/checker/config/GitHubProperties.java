@@ -1,4 +1,4 @@
-package dev.abarmin.velosiped.checker.service;
+package dev.abarmin.velosiped.checker.config;
 
 import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;

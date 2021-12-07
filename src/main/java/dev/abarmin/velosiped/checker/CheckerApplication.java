@@ -1,8 +1,9 @@
 package dev.abarmin.velosiped.checker;
 
-import dev.abarmin.velosiped.checker.service.GitHubProperties;
+import dev.abarmin.velosiped.checker.config.GitHubProperties;
 import dev.abarmin.velosiped.checker.service.RepositoryForkLoader;
 import dev.abarmin.velosiped.checker.service.RepositoryTestsUpdater;
+import java.util.concurrent.TimeUnit;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.ApplicationArguments;
@@ -11,6 +12,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.scheduling.annotation.EnableScheduling;
+import org.springframework.scheduling.annotation.Scheduled;
 
 @Slf4j
 @EnableScheduling
@@ -29,11 +31,12 @@ public class CheckerApplication implements ApplicationRunner {
 	private RepositoryTestsUpdater testsUpdater;
 
 	@Override
-	public void run(ApplicationArguments args) throws Exception {
+	public void run(ApplicationArguments args) {
 		loadForks();
 	}
 
-	private void loadForks() {
+	@Scheduled(fixedDelay = 60, initialDelay = 10, timeUnit = TimeUnit.SECONDS)
+	public void loadForks() {
 		log.info("Running initial load of forks");
 		forkLoader.load();
 		log.info("Done");

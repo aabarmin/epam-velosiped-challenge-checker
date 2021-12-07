@@ -1,5 +1,6 @@
 package dev.abarmin.velosiped.checker.service;
 
+import dev.abarmin.velosiped.checker.config.GitHubProperties;
 import dev.abarmin.velosiped.checker.domain.RepositoryFork;
 import dev.abarmin.velosiped.checker.repository.ForksRepository;
 import java.time.LocalDateTime;

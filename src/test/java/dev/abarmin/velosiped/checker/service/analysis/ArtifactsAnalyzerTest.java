@@ -1,6 +1,6 @@
 package dev.abarmin.velosiped.checker.service.analysis;
 
-import dev.abarmin.velosiped.checker.service.XmlConfiguration;
+import dev.abarmin.velosiped.checker.config.XmlConfiguration;
 import java.util.Collection;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;

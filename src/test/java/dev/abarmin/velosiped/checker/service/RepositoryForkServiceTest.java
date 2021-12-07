@@ -1,5 +1,7 @@
 package dev.abarmin.velosiped.checker.service;
 
+import dev.abarmin.velosiped.checker.config.GitHubConfiguration;
+import dev.abarmin.velosiped.checker.config.GitHubProperties;
 import java.util.Set;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;

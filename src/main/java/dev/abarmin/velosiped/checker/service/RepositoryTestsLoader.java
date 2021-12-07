@@ -5,7 +5,6 @@ import dev.abarmin.velosiped.checker.domain.RepositoryForkTest;
 import dev.abarmin.velosiped.checker.service.analysis.AnalysisResults;
 import dev.abarmin.velosiped.checker.service.analysis.ArtifactsAnalyzer;
 import dev.abarmin.velosiped.checker.service.download.ArtifactsDownloader;
-import java.net.URL;
 import java.nio.file.Path;
 import java.time.LocalDateTime;
 import java.util.Collection;
@@ -71,7 +70,8 @@ public class RepositoryTestsLoader {
         .filter(wf -> StringUtils.equalsIgnoreCase(wf.getName(), "Java CI with Maven"))
         .findFirst();
     if (workflowOptional.isEmpty()) {
-      throw new RuntimeException("No preconfigured WF");
+      log.info("No configured workflows for repo {}", toUpdate.getName());
+      return Optional.empty();
     }
     final GHWorkflow workflow = workflowOptional.get();
     // taking the latest run

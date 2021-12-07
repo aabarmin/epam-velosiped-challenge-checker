@@ -1,4 +1,4 @@
-package dev.abarmin.velosiped.checker.service;
+package dev.abarmin.velosiped.checker.config;
 
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.dataformat.xml.XmlMapper;

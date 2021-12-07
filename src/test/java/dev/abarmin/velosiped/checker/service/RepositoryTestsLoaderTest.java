@@ -1,5 +1,7 @@
 package dev.abarmin.velosiped.checker.service;
 
+import dev.abarmin.velosiped.checker.config.GitHubConfiguration;
+import dev.abarmin.velosiped.checker.config.GitHubProperties;
 import dev.abarmin.velosiped.checker.domain.RepositoryFork;
 import dev.abarmin.velosiped.checker.service.download.ArtifactsDownloader;
 import org.junit.jupiter.api.Test;

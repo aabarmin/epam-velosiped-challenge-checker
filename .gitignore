@@ -31,3 +31,7 @@ build/
 
 ### VS Code ###
 .vscode/
+
+### DB ###
+forks.mv.db
+forks.trace.db
