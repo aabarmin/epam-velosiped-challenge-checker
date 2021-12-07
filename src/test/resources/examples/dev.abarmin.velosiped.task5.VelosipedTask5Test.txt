@@ -1,0 +1,22 @@
+-------------------------------------------------------------------------------
+Test set: dev.abarmin.velosiped.task5.VelosipedTask5Test
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 0, Errors: 3, Skipped: 0, Time elapsed: 0.013 s <<< FAILURE! - in dev.abarmin.velosiped.task5.VelosipedTask5Test
+check_calculation{int, int}[1]  Time elapsed: 0 s  <<< ERROR!
+java.lang.RuntimeException: java.lang.ClassNotFoundException: dev.abarmin.velosiped.task5.VelosipedTask5Impl
+	at dev.abarmin.velosiped.task5.VelosipedTask5Test.<init>(VelosipedTask5Test.java:21)
+Caused by: java.lang.ClassNotFoundException: dev.abarmin.velosiped.task5.VelosipedTask5Impl
+	at dev.abarmin.velosiped.task5.VelosipedTask5Test.<init>(VelosipedTask5Test.java:21)
+
+check_calculation{int, int}[2]  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.RuntimeException: java.lang.ClassNotFoundException: dev.abarmin.velosiped.task5.VelosipedTask5Impl
+	at dev.abarmin.velosiped.task5.VelosipedTask5Test.<init>(VelosipedTask5Test.java:21)
+Caused by: java.lang.ClassNotFoundException: dev.abarmin.velosiped.task5.VelosipedTask5Impl
+	at dev.abarmin.velosiped.task5.VelosipedTask5Test.<init>(VelosipedTask5Test.java:21)
+
+check_calculation{int, int}[3]  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.RuntimeException: java.lang.ClassNotFoundException: dev.abarmin.velosiped.task5.VelosipedTask5Impl
+	at dev.abarmin.velosiped.task5.VelosipedTask5Test.<init>(VelosipedTask5Test.java:21)
+Caused by: java.lang.ClassNotFoundException: dev.abarmin.velosiped.task5.VelosipedTask5Impl
+	at dev.abarmin.velosiped.task5.VelosipedTask5Test.<init>(VelosipedTask5Test.java:21)
+

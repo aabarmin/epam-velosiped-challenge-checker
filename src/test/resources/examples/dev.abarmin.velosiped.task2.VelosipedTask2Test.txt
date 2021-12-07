@@ -1,0 +1,40 @@
+-------------------------------------------------------------------------------
+Test set: dev.abarmin.velosiped.task2.VelosipedTask2Test
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 0, Errors: 6, Skipped: 0, Time elapsed: 0.03 s <<< FAILURE! - in dev.abarmin.velosiped.task2.VelosipedTask2Test
+check_calculation{int, int}[1]  Time elapsed: 0.003 s  <<< ERROR!
+java.lang.RuntimeException: java.lang.ClassNotFoundException: dev.abarmin.velosiped.task2.VelosipedTask2Impl
+	at dev.abarmin.velosiped.task2.VelosipedTask2Test.<init>(VelosipedTask2Test.java:19)
+Caused by: java.lang.ClassNotFoundException: dev.abarmin.velosiped.task2.VelosipedTask2Impl
+	at dev.abarmin.velosiped.task2.VelosipedTask2Test.<init>(VelosipedTask2Test.java:19)
+
+check_calculation{int, int}[2]  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.RuntimeException: java.lang.ClassNotFoundException: dev.abarmin.velosiped.task2.VelosipedTask2Impl
+	at dev.abarmin.velosiped.task2.VelosipedTask2Test.<init>(VelosipedTask2Test.java:19)
+Caused by: java.lang.ClassNotFoundException: dev.abarmin.velosiped.task2.VelosipedTask2Impl
+	at dev.abarmin.velosiped.task2.VelosipedTask2Test.<init>(VelosipedTask2Test.java:19)
+
+check_calculation{int, int}[3]  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.RuntimeException: java.lang.ClassNotFoundException: dev.abarmin.velosiped.task2.VelosipedTask2Impl
+	at dev.abarmin.velosiped.task2.VelosipedTask2Test.<init>(VelosipedTask2Test.java:19)
+Caused by: java.lang.ClassNotFoundException: dev.abarmin.velosiped.task2.VelosipedTask2Impl
+	at dev.abarmin.velosiped.task2.VelosipedTask2Test.<init>(VelosipedTask2Test.java:19)
+
+check_serviceExists{int, int}[1]  Time elapsed: 0 s  <<< ERROR!
+java.lang.RuntimeException: java.lang.ClassNotFoundException: dev.abarmin.velosiped.task2.VelosipedTask2Impl
+	at dev.abarmin.velosiped.task2.VelosipedTask2Test.<init>(VelosipedTask2Test.java:19)
+Caused by: java.lang.ClassNotFoundException: dev.abarmin.velosiped.task2.VelosipedTask2Impl
+	at dev.abarmin.velosiped.task2.VelosipedTask2Test.<init>(VelosipedTask2Test.java:19)
+
+check_serviceExists{int, int}[2]  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.RuntimeException: java.lang.ClassNotFoundException: dev.abarmin.velosiped.task2.VelosipedTask2Impl
+	at dev.abarmin.velosiped.task2.VelosipedTask2Test.<init>(VelosipedTask2Test.java:19)
+Caused by: java.lang.ClassNotFoundException: dev.abarmin.velosiped.task2.VelosipedTask2Impl
+	at dev.abarmin.velosiped.task2.VelosipedTask2Test.<init>(VelosipedTask2Test.java:19)
+
+check_serviceExists{int, int}[3]  Time elapsed: 0 s  <<< ERROR!
+java.lang.RuntimeException: java.lang.ClassNotFoundException: dev.abarmin.velosiped.task2.VelosipedTask2Impl
+	at dev.abarmin.velosiped.task2.VelosipedTask2Test.<init>(VelosipedTask2Test.java:19)
+Caused by: java.lang.ClassNotFoundException: dev.abarmin.velosiped.task2.VelosipedTask2Impl
+	at dev.abarmin.velosiped.task2.VelosipedTask2Test.<init>(VelosipedTask2Test.java:19)
+
