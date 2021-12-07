@@ -52,6 +52,7 @@ public class StatsController {
   private Collection<StatTestRow> toTests(Set<RepositoryForkTest> tests) {
     return tests.stream()
         .map(this::toTest)
+        .sorted(Comparator.comparing(StatTestRow::getClassName))
         .collect(Collectors.toList());
   }
 
