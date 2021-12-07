@@ -6,6 +6,7 @@ import dev.abarmin.velosiped.checker.repository.ForksRepository;
 import java.time.format.DateTimeFormatter;
 import java.time.format.FormatStyle;
 import java.util.Collection;
+import java.util.Comparator;
 import java.util.Set;
 import java.util.stream.Collectors;
 import java.util.stream.StreamSupport;
@@ -34,6 +35,7 @@ public class StatsController {
   private Collection<StatRow> toRows(Iterable<RepositoryFork> forks) {
     return StreamSupport.stream(forks.spliterator(), false)
         .map(this::toRow)
+        .sorted(Comparator.comparing(StatRow::getTotalTestsSuccess))
         .collect(Collectors.toList());
   }
 
