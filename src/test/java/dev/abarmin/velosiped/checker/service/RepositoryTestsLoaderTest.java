@@ -2,8 +2,11 @@ package dev.abarmin.velosiped.checker.service;
 
 import dev.abarmin.velosiped.checker.config.GitHubConfiguration;
 import dev.abarmin.velosiped.checker.config.GitHubProperties;
+import dev.abarmin.velosiped.checker.config.XmlConfiguration;
 import dev.abarmin.velosiped.checker.domain.RepositoryFork;
+import dev.abarmin.velosiped.checker.service.analysis.ArtifactsAnalyzer;
 import dev.abarmin.velosiped.checker.service.download.ArtifactsDownloader;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
@@ -21,6 +24,8 @@ import static org.junit.jupiter.api.Assertions.*;
     RepositoryTestsLoader.class,
     GitHubConfiguration.class,
     ArtifactsDownloader.class,
+    ArtifactsAnalyzer.class,
+    XmlConfiguration.class,
     RepositoryTestsLoaderTest.ConfigurationForTest.class
 })
 @EnableConfigurationProperties(GitHubProperties.class)
@@ -37,6 +42,7 @@ class RepositoryTestsLoaderTest {
   }
 
   @Test
+  @Disabled
   void loadWorkflows() {
     final RepositoryFork forkRepository = RepositoryFork.builder()
         .name("aabarmin/epam-velosiped-challenge-simple-public")

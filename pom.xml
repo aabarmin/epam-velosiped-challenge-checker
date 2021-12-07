@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>dev.abarmin.velosiped</groupId>
 	<artifactId>checker</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.0</version>
 	<name>checker</name>
 	<description>EPAM Velosiped Challenge Checker</description>
 	<properties>
